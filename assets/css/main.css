@@ -83,7 +83,7 @@ input, select, textarea {
 	}
 
 	body {
-		padding-top: 3.5em;
+		padding-top: 0;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -110,12 +110,13 @@ input, select, textarea {
 		-webkit-transition: color .2s ease-in-out;
 		-ms-transition: color .2s ease-in-out;
 		transition: color .2s ease-in-out;
-		color: #43B3E0;
-		text-decoration: underline;
+		color: #e91b23;
+		
 	}
 
 		a:hover {
-			color: #43bff0 !important;
+			color: #e91b23 !important;
+			text-decoration: none;
 		}
 
 		a img {
@@ -295,9 +296,7 @@ input, select, textarea {
     	overflow: hidden;
 
 	}
-	img .logo-from-h {
-		flex: none; /* keep aspect ratio */
-	}
+
 /* Row */
 
 	.row {
@@ -1671,10 +1670,7 @@ input, select, textarea {
 			margin: 0 0 2em 0;
 		}
 
-			.image.centered img {
-				margin: 0 auto;
-				width: auto;
-			}
+
 
 /* Button */
 
@@ -1708,10 +1704,11 @@ input, select, textarea {
 		opacity: 1;
 		padding: 1em 2.35em 1em 2.35em;
 		font-size: 1.1em;
-		max-width: 24em;
+		max-width: 10em;
 		transition: opacity .25s ease-in-out;
    		-moz-transition: opacity .25s ease-in-out;
    		-webkit-transition: opacity .25s ease-in-out;
+
 	}
 
 		input[type="button"]:hover,
@@ -1847,7 +1844,8 @@ input, select, textarea {
 				}
 
 				ul.social li a.fa-facebook-f {
-					background-color: #3C5A98;
+					background-color: #ea1f25;
+					opacity: 0.8;
 				}
 
 				ul.social li a.fa-dribbble {
@@ -2029,12 +2027,24 @@ input, select, textarea {
 	}
 
 		.wrapper.style1 {
-			background-image: url("../../images/car/r-ferrari.jpg");
+			height: 1000px;
+			/* background-image: url("../../images/car/r-ferrari.jpg");
 			background-repeat: no-repeat;
   			background-size: cover;
 			background-position: center center;
 			background-attachment: fixed;
-			padding: 8em 0 8em 0;
+			padding: 8em 0 8em 0; */
+
+		}
+
+		.jumbotron {
+		 background-image: url("../../images/car/r-ferrari.jpg");
+		 background-attachment: fixed;
+		 background-position: center;
+		 background-repeat: no-repeat;
+		 background-size: cover;
+		 margin-bottom: 0;
+		 padding: 0;
 
 		}
 
@@ -2106,10 +2116,25 @@ input, select, textarea {
 		}
 
 		#nav li img {
-			position: absolute;
-			left: 0;
-			top: 0;
-			height: 100%;
+			height: 3.5em;
+			line-height: 3.5;
+
+		}
+
+		.navbar a {
+			-moz-transition: background-color .2s ease-in-out;
+			-webkit-transition: background-color .2s ease-in-out;
+			-ms-transition: background-color .2s ease-in-out;
+			transition: background-color .2s ease-in-out;
+			color: #fff;
+			text-decoration: none;
+			outline: 0;
+			font-weight: 600;
+			border-radius: 8px;
+			color: #fff;
+			height: 2.5em;
+			line-height: 2.5em;
+			padding: 0 1.25em;
 		}
 
 		#nav a {
@@ -2358,7 +2383,6 @@ input, select, textarea {
 				font-size: 1.2em;
 				width: 100%;
 				padding: 1em 0 1em 0;
-
 			}
 
 				input[type="button"].large,
@@ -2519,4 +2543,34 @@ input, select, textarea {
 	    height:100%;
 	    width:100%;
 	    position:absolute;
+	}
+
+	.navbar {
+		background-color: #35363a;
+	}
+
+	.navbar-toggler button {
+		border: 0;
+
+	}
+
+	button:focus {
+		outline-color: #ea1f25;
+		opacity: 0.5;
+	}
+
+	.kontaktinformasjon dt {
+		font-weight: bold;
+	}
+
+	.aapningstider dt {
+		font-weight: bold;
+	}
+
+	.aapningstider dd {
+
+	}
+
+	.button a {
+		text-decoration: none;
 	}
