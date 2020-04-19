@@ -78,9 +78,9 @@ input, select, textarea {
 		box-sizing: border-box;
 	}
 
-	*, *:before, *:after {
+	/* *, *:before, *:after {
 		box-sizing: inherit;
-	}
+	} */
 
 	body {
 		padding-top: 0;
@@ -111,7 +111,7 @@ input, select, textarea {
 		-ms-transition: color .2s ease-in-out;
 		transition: color .2s ease-in-out;
 		color: #e91b23;
-		
+
 	}
 
 		a:hover {
@@ -232,6 +232,8 @@ input, select, textarea {
 		margin: 0 auto;
 		max-width: calc(100% - 50px);
 		width: 1200px;
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 		.container.medium {
@@ -1559,7 +1561,7 @@ input, select, textarea {
 		form select:focus,
 		form textarea:focus {
 			background: #fafafa;
-			box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.05), 0px 1px 0px 0px rgba(255, 255, 255, 0.025), inset 0px 0px 2px 1px #43bff0;
+			box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.05), 0px 1px 0px 0px rgba(255, 255, 255, 0.025), inset 0px 0px 2px 1px;
 		}
 
 	form textarea {
@@ -1680,7 +1682,7 @@ input, select, textarea {
 	button,
 	.button {
 		background-image: url("images/bg.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-		background-image: url("images/bg.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+		/* background-image: url("images/bg.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)); */
 		background-image: url("images/bg.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
 		background-image: url("images/bg.png"), linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
 		-moz-transition: background-color .2s ease-in-out;
@@ -1690,13 +1692,13 @@ input, select, textarea {
 		-webkit-appearance: none;
 		position: relative;
 		display: inline-block;
-		color: #fff !important;
+		color: rgba(255,255,255,.5);
 		text-decoration: none;
 		font-weight: 700;
 		border: 0;
 		outline: 0;
 		cursor: pointer;
-		border-radius: 8px;
+		border-radius: 3px;
 		text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
 		overflow: hidden;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
@@ -1705,9 +1707,9 @@ input, select, textarea {
 		padding: 1em 2.35em 1em 2.35em;
 		font-size: 1.1em;
 		max-width: 10em;
-		transition: opacity .25s ease-in-out;
-   		-moz-transition: opacity .25s ease-in-out;
-   		-webkit-transition: opacity .25s ease-in-out;
+		transition: opacity .05s ease-in-out;
+   		-moz-transition: opacity .05s ease-in-out;
+   		-webkit-transition: opacity .07s ease-in-out;
 
 	}
 
@@ -1718,7 +1720,7 @@ input, select, textarea {
 		.button:hover {
 			background-color: #35363a;
 			opacity: 0.5;
-			color: #fff !important;
+			color: rgba(255,255,255,.5);
 		}
 
 		input[type="button"]:active,
@@ -2028,6 +2030,7 @@ input, select, textarea {
 
 		.wrapper.style1 {
 			height: 1000px;
+
 			/* background-image: url("../../images/car/r-ferrari.jpg");
 			background-repeat: no-repeat;
   			background-size: cover;
@@ -2045,7 +2048,6 @@ input, select, textarea {
 		 background-size: cover;
 		 margin-bottom: 0;
 		 padding: 0;
-
 		}
 
 		.wrapper.style2 {
@@ -2135,6 +2137,11 @@ input, select, textarea {
 			height: 2.5em;
 			line-height: 2.5em;
 			padding: 0 1.25em;
+		}
+
+		.navbar-toggler-icon {
+			max-width: 20px;
+			max-height: 20px;
 		}
 
 		#nav a {
@@ -2326,13 +2333,13 @@ input, select, textarea {
 
 		/* Basic */
 
-			body {
+			/* body {
 				padding-top: 44px;
-			}
+			} */
 
 			body, input, textarea, select {
-				line-height: 1.75em;
-				font-size: 10pt;
+				/* line-height: 1.75em; */
+				font-size: 11pt;
 				letter-spacing: 0;
 			}
 
@@ -2572,5 +2579,116 @@ input, select, textarea {
 	}
 
 	.button a {
-		text-decoration: none;
+		text-decoration: ;
+
 	}
+
+	@media (min-width: 768px) {
+		.navbar-brand.abs
+    {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+
+	  background-color: #35363a;
+	  display: table;
+	  width: 100%;
+	  cursor: default;
+
+	  z-index: 1000;
+
+
+
+}
+
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+
+	float: left;
+
+	color: inherit;
+	font-weight: 600;
+	text-decoration: none;
+  	padding-right: .5rem;
+  	padding-left: .5rem
+
+}
+
+#topnav-brand {
+	display: block;
+	max-width: 25%;
+	text-align: center;
+	vertical-align: middle;
+
+
+}
+
+/* Change the color of links on hover */
+/* .topnav a:hover {
+  background-color: #ddd;
+  color: black;
+} */
+
+/* Add an active class to highlight the current page */
+/* .topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+} */
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+	  background-color: #35363a;
+    }
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.navbar-brand {
+max-height: 50px;
+}
+
+#nav-center {
+
+	padding-top: 11.5px;
+	font-size: 11pt;
+
+
+}

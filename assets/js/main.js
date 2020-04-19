@@ -8,7 +8,7 @@
 
 	var	$window = $(window),
 		$body = $('body'),
-		$nav = $('.navbar');
+		$nav = $('.topnav');
 
 	// Breakpoints.
 		breakpoints({
@@ -26,9 +26,19 @@
 		});
 
 	// Scrolly.
-		$('.navbar a, .scrolly').scrolly({
+		$('.topnav a, .scrolly').scrolly({
 			speed: 1000,
-			offset: function() { return $nav.height(); }
+			offset: function() { return $nav.height() + -55; }
 		});
 
 })(jQuery);
+
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}

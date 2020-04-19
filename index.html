@@ -7,31 +7,76 @@
 <html>
 	<head>
 		<title>Hamre Auto</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="shortcut icon" href="images\logo\favicon\favicon2.png">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 	</head>
 	<body class="is-preload">
+		<div class="topnav" id="myTopnav">
+			<div class="test">
+				<a class="navbar-brand" href="#top"><img id="logo" src="images\logo\Hamre auto logo sort bakgrunn.jpg" alt="" height="50px" width="150px"/>
+				</a>
+			</div>
+			<a id="nav-center" href="#top">Hjem</a>
+  			<a id="nav-center" href="#work">Om oss</a>
+  			<a id="nav-center" href="#contact">Kontakt</a>
+  			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    		<i class="fa fa-bars"></i>
+  			</a>
+		</div>
 
-		<!-- Nav -->
+		<!--
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <a class="navbar-brand" href="#">Navbar</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
 
-	<nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Link</a>
+	      </li>
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          Dropdown
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          <a class="dropdown-item" href="#">Action</a>
+	          <a class="dropdown-item" href="#">Another action</a>
+	          <div class="dropdown-divider"></div>
+	          <a class="dropdown-item" href="#">Something else here</a>
+	        </div>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link disabled" href="#">Disabled</a>
+	      </li>
+	    </ul>
+	    <form class="form-inline my-2 my-lg-0">
+	      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+	      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+	    </form>
+	  </div>
+	</nav> -->
+	<!-- <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
 
-		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapse_target" aria-controls="collapse_target" aria-expanded="false" aria-label="Toggle navigation">
-    		<!-- <span style="color:#ea1f25">&#9776;</span> -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+		 data-target="#collapse_target" aria-controls="collapse_target" aria-expanded="false" aria-label="Toggle navigation">
+
 			<span class="navbar-toggler-icon"></span>
   		</button>
-		<!-- Brand/logo -->
 
-
-		<!-- Links -->
 		<div class="collapse navbar-collapse" id="collapse_target">
-			<a class="navbar-brand" href="#top">
+			<a class="navbar-brand d-flex" href="#top">
 				<img src="images\logo\Hamre auto logo sort bakgrunn.jpg" alt="logo" style="height:100%;">
 			</a>
 
@@ -47,7 +92,7 @@
 				</li>
 			</ul>
 		</div>
-	</nav>
+	</nav> -->
 
 
 
@@ -78,7 +123,7 @@
 				<div class="container">
 					<header>
 						<h2>Bedriften</h2>
-						<p>Hamre Auto er en bruktbilforhandler som har over 12 års erfaring fra bilsalg. Forhandleren drives av Jean Hamre som tidligere har jobbet hos store forhandlere i distriktet.</p>
+						<p>Hamre Auto er en bilforhandler som ligger sentralt plassert på Forus. Butikken eies av Jean Hamre som tidligere har jobbet hos store aktører i distriktet. Hamre har over 12 års erfaring fra bransjen og har solid kunnskap med salg og service.</p>
 					</header>
 					<div class="row aln-center">
 						<div class="col-3 col-6-medium col-12-small">
@@ -123,7 +168,7 @@
 		<!-- Contact -->
 			<article id="contact" class="wrapper style4">
 				<div class="text-center">
-					<a href="#"><img class="mx-auto d-block" src="images\logo\Hamre auto logo sort bakgrunn.jpg" alt="" height="80%" width="80%"/>
+					<a href="#"><img class="mx-auto d-block" src="images\logo\Hamre auto logo sort bakgrunn.jpg" alt="" height="50%" width=50%"/>
 					</a>
 				</div>
 
@@ -134,10 +179,10 @@
 							<div class="row">
 								<dl class="aapningstider col-6">
 									<dt>Åpningstider:</dt>
-									<dd>Mandag - torsdag	09:00 - 17:00</dd>
-									<dd>Fredag				09:00 - 18:00</dd>
-									<dd>Lørdag				10:00 - 15:00</dd>
-									<dd>Søndag 						Stengt</dd>
+									<dd>Mandag, onsdag - fredag 08:30 - 15:30</dd>
+									<dd>Tirsdag	09:00 - 19:00</dd>
+									<dd>Lørdag 10:00 - 13:00</dd>
+									<dd>Søndag - Stengt</dd>
 								</dl>
 								<dl class="kontaktinformasjon col-6">
 									<dt>Selger:</dt>
