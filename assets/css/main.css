@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
+/* @import url("https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css"); */
 @import url("fontawesome-all.min.css");
 
 /*
@@ -1699,13 +1700,13 @@ input, select, textarea {
 		outline: 0;
 		cursor: pointer;
 		border-radius: 3px;
-		text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
+		/* text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5); */
 		overflow: hidden;
-		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
+		/* box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75); */
 		background-color: #35363a;
 		opacity: 1;
-		padding: 1em 2.35em 1em 2.35em;
-		font-size: 1.1em;
+		padding: .4em 2.15em .4em 2.15em;
+		font-size: 1em;
 		max-width: 10em;
 		transition: opacity .05s ease-in-out;
    		-moz-transition: opacity .05s ease-in-out;
@@ -1747,7 +1748,7 @@ input, select, textarea {
 		button.alt,
 		.button.alt {
 			background-color: #444;
-			box-shadow: inset 0px 0px 0px 1px #242424, inset 0px 2px 1px 0px rgba(255, 255, 255, 0.2);
+			box-shadow: inset 0px 0px 0px 0px #242424, inset 0px 0px 1px 0px rgba(255, 255, 255, 0.2);
 		}
 
 			input[type="button"].alt:hover,
@@ -2692,4 +2693,16 @@ max-height: 50px;
 	font-size: 11pt;
 
 
+}
+
+@font-face {
+	font-family: 'gothamCity';
+	src: url(../webfonts/Gotham-Font/GothamBoldItalic.ttf);
+	font-style: normal;
+	font-weight: 100%;
+}
+
+#header {
+	font-family: gothamCity;
+	color: white;
 }
