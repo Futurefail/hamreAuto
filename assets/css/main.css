@@ -1701,6 +1701,7 @@ input, select, textarea {
 		cursor: pointer;
 		border-radius: 3px;
 		/* text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5); */
+		text-shadow: none;
 		overflow: hidden;
 		/* box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75); */
 		background-color: #35363a;
@@ -2602,7 +2603,7 @@ input, select, textarea {
 	  display: table;
 	  width: 100%;
 	  cursor: default;
-
+	  position: fixed;
 	  z-index: 1000;
 
 
