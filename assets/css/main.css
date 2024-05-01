@@ -2044,7 +2044,7 @@ input, select, textarea {
 		}
 
 		.jumbotron {
-		 background-image: url("../../images/car/r-ferrari2.jpg");
+		 background-image: url("../../images/car/HA2.jpg");
 		 background-attachment: fixed;
 		 background-position: center;
 		 background-repeat: no-repeat;
@@ -2552,6 +2552,7 @@ input, select, textarea {
 	    height:100%;
 	    width:100%;
 	    position:absolute;
+
 	}
 
 	.navbar {
@@ -2581,7 +2582,7 @@ input, select, textarea {
 	}
 
 	.button a {
-		text-decoration: ;
+	
 
 	}
 
